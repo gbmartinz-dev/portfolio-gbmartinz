@@ -1,5 +1,7 @@
+import { Link } from "@/app/components/link"
 import { TechBadge } from "@/app/components/tech-badge"
 import Image from "next/image"
+import { HiArrowNarrowRight } from "react-icons/hi"
 
 export const ProjectCard = () => {
     return (
@@ -26,7 +28,7 @@ export const ProjectCard = () => {
                 </h3>
 
                 <p className="text-gray-400 my-6">
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quam, hic! Rem sapiente vitae qui nulla explicabo adipisci reiciendis consequatur officia incidunt quos asperiores numquam atque aspernatur quae odio itaque, sunt fugit optio perferendis magnam error aut! Molestiae voluptatem facilis rem? Distinctio ipsum dignissimos id cumque voluptate sapiente, maiores deserunt aut.
+                    Bookwise é uma plataforma de avaliação de livros que foi desenvolvida durante o bootcamp Ignite da Rocketseat. Com apenas um Figma precisavamos desenvolver essa aplicação completa Full Stack com Next.js. 
                 </p>
 
                 <div className="flex gap-x-2 gap-y-3 flex-wrap mb-8 lg:max-w-[350px]">
@@ -36,6 +38,11 @@ export const ProjectCard = () => {
                     <TechBadge name="Next.js" />
                     <TechBadge name="Next.js" />
                 </div>
+
+                <Link href="/projects/book-wise">
+                    Ver projeto
+                    <HiArrowNarrowRight />
+                </Link>
             </div>
         </div>
     )
