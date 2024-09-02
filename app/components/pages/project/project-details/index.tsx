@@ -1,4 +1,10 @@
+import { Button } from "@/app/components/button"
 import { SectionTitle } from "@/app/components/section-title"
+import { TechBadge } from "@/app/components/tech-badge"
+import { TbBrandGithub } from "react-icons/tb"
+import { FiGlobe } from "react-icons/fi"
+import { Link } from "@/app/components/link"
+import { HiArrowNarrowLeft } from "react-icons/hi"
 
 export const ProjectDetails = () => {
     return(
@@ -18,7 +24,34 @@ export const ProjectDetails = () => {
             <p className="text-gray-400 text-center max-w-[640px] my-4 sm:my-6 text-sm sm:text-base">
                 BookWise é uma plataforma de avaliação de livros que foi desenvolvida durante o bootcamp Ignite da Rocketseat. Com apenas um Figma precisávamos desenvolver essa aplicação completa Full Stack com Next.js.
             </p>
-            <div className="w-full max-w-[330px] flex flex-wrap gap-2 items-center jusitfy-center"></div>
+            <div className="w-full max-w-[330px] flex flex-wrap gap-2 items-center justify-center">
+                <TechBadge name="Next.js" />
+                <TechBadge name="Next.js" />
+                <TechBadge name="Next.js" />
+                <TechBadge name="Next.js" />
+                <TechBadge name="Next.js" />
+                <TechBadge name="Next.js" />
+                <TechBadge name="Next.js" />
+            </div>
+            <div className="my-6 sm:my-12 flex items-center gap-2 sm:gap-4 flex-col sm:flex-row">
+                <a href="https://github.com/gbmartinz-dev" target="_blank">
+                    <Button className="min-w-[180px]">
+                        <TbBrandGithub size={20} />
+                        Repositório
+                    </Button>
+                </a>
+                <a href="https://github.com/gbmartinz-dev" target="_blank">
+                    <Button className="min-w-[180px]">
+                        <FiGlobe size={20} />
+                        Projeto Online
+                    </Button>
+                </a>
+            </div>
+
+            <Link href="/projects">
+                <HiArrowNarrowLeft size={20} />
+                Voltar para projetos
+            </Link>
         </section>
     )
 }
