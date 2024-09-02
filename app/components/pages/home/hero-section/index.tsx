@@ -79,7 +79,8 @@ export const HeroSection = () => {
                     height={304}
                     src="/images/profile-gabrielMartins.png"
                     alt="Foto de perfil do Gabriel Martins"
-                    className="w-[300px] h-[300px] lg:w-[420px] lg:h-[404px] mb-6 lg:mb-0 shadow-2xl rounded-lg object-cover" 
+                    className="w-[300px] h-[300px] lg:w-[420px] lg:h-[404px] mb-6 lg:mb-0 shadow-2xl rounded-lg object-cover"
+                    unoptimized 
                 />
             </div>
         </section>
