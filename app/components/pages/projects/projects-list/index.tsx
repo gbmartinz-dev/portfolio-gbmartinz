@@ -1,6 +1,9 @@
 import Link from "next/link"
 import { ProjectCard } from "./project-card"
 
+type ProjectsListProps = {
+    
+}
 
 export const ProjectsList = () => {
     return(
