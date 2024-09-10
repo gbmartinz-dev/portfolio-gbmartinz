@@ -1,6 +1,6 @@
 import { SectionTitle } from '@/app/components/section-title'
 import { ExperienceItem } from './experience-item'
-import { WorkExperience as IWorkExperience } from '@/app/types/work-experience'
+import { WorkExperience as IWorkExperience } from "@/app/types/work-experience";
 
 type WorkExperienceProps = {
   experiences: IWorkExperience[]
